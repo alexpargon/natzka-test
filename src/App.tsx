@@ -1,9 +1,13 @@
+import logo from "@/assets/natzca-logo.svg";
+
 function App() {
   return (
     <div className="flex h-screen bg-gray-100">
       <div className="hidden md:flex flex-col w-64">
-        <div className="flex items-center justify-center h-16 bg-[#0f1649] border-b border-gray-200">
-          <span className="text-white font-bold uppercase">Natzka</span>
+        <div className="flex items-center justify-center h-16 bg-[#0f1649] border-b border-[#2539bbc9]">
+          <span className="text-white font-bold uppercase">
+            <img src={logo}></img>
+          </span>
         </div>
         <div className="flex flex-col flex-1 overflow-y-auto">
           <nav className="flex-1 px-2 py-4 bg-[#2538bb]">
@@ -12,7 +16,7 @@ function App() {
         </div>
       </div>
       <div className="flex flex-col flex-1 overflow-y-auto">
-        <div className="flex items-center justify-between h-16 bg-[#0f1649] border-b border-gray-200">
+        <div className="flex items-center justify-between h-16 bg-[#0f1649] border-b border-[#2539bbc9]">
           <span className="text-white font-bold">/Path/to/success</span>
         </div>
         <div className="p-4">
