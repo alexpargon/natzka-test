@@ -1,6 +1,8 @@
 import logo from "@/assets/natzca-logo.svg";
+import { Explorer } from "./components/explorer";
 
 function App() {
+  const data = ["/root/test", "/dev/null", "/root/something/somewhere"];
   return (
     <div className="flex h-screen bg-gray-100">
       <div className="hidden md:flex flex-col w-64">
@@ -11,14 +13,14 @@ function App() {
         </div>
         <div className="flex flex-col flex-1 overflow-y-auto">
           <nav className="flex-1 px-2 py-4 bg-[#2538bb]">
-            <span className="text-white font-bold">Yet to be filled</span>
+            <span className="text-white font-bold">
+              <Explorer data={data}></Explorer>
+            </span>
           </nav>
         </div>
       </div>
       <div className="flex flex-col flex-1 overflow-y-auto">
-        <div className="flex items-center justify-between h-16 bg-[#0f1649] border-b border-[#2539bbc9]">
-          <span className="text-white font-bold">/Path/to/success</span>
-        </div>
+        <div className="flex items-center justify-between h-16 bg-[#0f1649] border-b border-[#2539bbc9]"></div>
         <div className="p-4">
           <h1 className="text-2xl font-bold">representing /Path/to/success</h1>
           <br />
