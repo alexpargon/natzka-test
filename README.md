@@ -37,8 +37,8 @@ Please note that this example is not collapsible and styling is non-existent. Ho
   - test
   - something
     - somewhere
-  - dev
-    - null
+- dev
+  - null
 ```
 
 ### How we will evaluate
