@@ -19,6 +19,8 @@ const Style = styled.div<SegmentStyle>`
 `;
 
 const Button = styled.button`
+  color: #fff;
+  transition: all 0.5s;
   &:hover {
     color: #aaa;
   }
