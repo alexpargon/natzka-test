@@ -11,9 +11,9 @@ describe("RecursiveSegment", () => {
 
   test("renders RecursiveSegment component", () => {
     render(<RecursiveSegment node={node} action={() => {}} />);
-    const segmentElement = screen.getByText("/");
-    const segmentChild = screen.getByText("usr");
-    const segmentSecondChild = screen.getByText("var");
+    const segmentElement = screen.queryByText("/");
+    const segmentChild = screen.queryByText("usr");
+    const segmentSecondChild = screen.queryByText("var");
     expect(segmentElement).toBeInTheDocument();
     expect(segmentChild).toBeInTheDocument();
     expect(segmentSecondChild).toBeInTheDocument();

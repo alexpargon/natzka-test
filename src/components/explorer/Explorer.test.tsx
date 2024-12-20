@@ -10,7 +10,7 @@ describe("Explorer", () => {
     render(<Explorer data={data} onSelect={() => {}} />);
     const segmentRoot = screen.queryByText("/");
     const segmentElement = screen.queryByText("usr");
-    const segmentChild = screen.getByText("var");
+    const segmentChild = screen.queryByText("var");
     expect(segmentRoot).toBeInTheDocument();
     expect(segmentElement).toBeInTheDocument();
     expect(segmentChild).toBeInTheDocument();

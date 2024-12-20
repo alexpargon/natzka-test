@@ -13,7 +13,7 @@ describe("Segment", () => {
 
   test("renders Segment component", () => {
     render(<Segment data={data} action={() => {}} />);
-    const segmentElement = screen.getByText(data.data);
+    const segmentElement = screen.queryByText(data.data);
     expect(segmentElement).toBeInTheDocument();
   });
 });
