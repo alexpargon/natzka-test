@@ -63,4 +63,4 @@ To create a production ready component, the following topics need to be addresse
 
 6. **Security (not implemented)**: Follow security best practices to prevent common vulnerabilities, such as cross-site scripting (XSS) and injection attacks. Sanitize user input and avoid using unsafe methods or libraries if required.
 
-7. **Versioning and release management (not implemented)**: Create repository or use any other way to deliver the component to any project that requires it's use, the simplest way is creating a monorepo, but there are package managers such as npm and github packages that you can leverage to address this.
+7. **Versioning and release management (not implemented)**: Create a repository or a package manager to distribute the component to any project that requires it's use. The simplest way is creating a monorepo, but there are package managers such as npm and github packages that you can leverage distribute this efficiently.
