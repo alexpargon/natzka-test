@@ -57,7 +57,7 @@ To create a production ready component, the following topics need to be addresse
 
 3. **Accessibility**: Add accesibility features to make the component more usable by people with disabilities.
 
-4. **Testing**: Write comprehensive unit tests to verify the functionality of the component.
+4. **Testing**: Write comprehensive unit tests to verify the functionality of the component, these tests can include graphical tests with tools such as storybook.
 
 5. **Documentation**: Provide good documentation for the component, including usage instructions, props descriptions, and examples.
 
