@@ -38,7 +38,14 @@ function Segment(props: SegmentProps) {
   return (
     <Style $level={data.level} $visible={data.visible}>
       <li>
-        <Button className="segment-button" onClick={handleOpen}>
+        <Button
+          className="segment-button"
+          onClick={handleOpen}
+          aria-expanded={open}
+          aria-controls={`segment-content-${data.uid}`}
+          aria-hidden={!open}
+          aria-label={data.data}
+        >
           <div className="segment-content">
             <IconChevron open={open} className="icon" />
             <p>{data.data}</p>
