@@ -18,10 +18,9 @@ const Style = styled.div<SegmentStyle>`
   }
 `;
 
-const Button = styled.button<ButtonProps>`
-  .children {
-    transition: all 0.5s;
-    display: ${(props) => (props.open ? "none" : "initial")};
+const Button = styled.button`
+  &:hover {
+    color: #aaa;
   }
 `;
 
@@ -37,7 +36,7 @@ function Segment(props: SegmentProps) {
   return (
     <Style $level={data.level} $visible={data.visible}>
       <li>
-        <Button open={open} className="segment-button" onClick={handleOpen}>
+        <Button className="segment-button" onClick={handleOpen}>
           <div className="segment-content">
             <IconChevron open={open} className="icon" />
             <p>{data.data}</p>

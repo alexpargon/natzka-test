@@ -11,7 +11,7 @@ const App = () => {
   };
   return (
     <div className="flex h-screen bg-gray-100">
-      <div className="hidden md:flex flex-col w-64">
+      <div className="flex flex-col w-64">
         <div className="flex items-center justify-center h-16 bg-[#0f1649] border-b border-[#2539bbc9]">
           <span className="text-white font-bold uppercase">
             <img src={logo}></img>

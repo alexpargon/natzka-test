@@ -25,10 +25,6 @@ type SegmentStyle = {
   $visible: boolean;
 };
 
-type ButtonProps = {
-  open: boolean;
-};
-
 type ChevronProps = {
   open: boolean;
 };
