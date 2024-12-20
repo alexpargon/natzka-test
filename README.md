@@ -46,3 +46,21 @@ Please note that this example is not collapsible and styling is non-existent. Ho
 Publish the result to a public Github repository, and share the link with us.
 We will run your code with different inputs, and see if it behaves as expected.
 On top of that we will inspect your code, to see if it matches expectations for a production ready solution.
+
+## Answer to question about production ready:
+
+To create a production ready component, the following topics need to be addressed:
+
+1. **Code quality**: Ensure that the code follows best practices.
+
+2. **Performance optimization (simple optimizations)**: Optimize the component for performance by minimizing unnecessary re-renders and avoiding expensive operations.
+
+3. **Accessibility**: Add accesibility features to make the component more usable by people with disabilities.
+
+4. **Testing**: Write comprehensive unit tests to verify the functionality of the component.
+
+5. **Documentation**: Provide good documentation for the component, including usage instructions, props descriptions, and examples.
+
+6. **Security (not implemented)**: Follow security best practices to prevent common vulnerabilities, such as cross-site scripting (XSS) and injection attacks. Sanitize user input and avoid using unsafe methods or libraries if required.
+
+7. **Versioning and release management (not implemented)**: Create repository or use any other way to deliver the component to any project that requires it's use, the simplest way is creating a monorepo, but there are package managers such as npm and github packages that you can leverage to address this.
