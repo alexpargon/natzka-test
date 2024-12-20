@@ -20,9 +20,11 @@ describe("Tree", () => {
 
   it("should change the parent of a child", () => {
     const tree = new Tree("/", null);
-    const child = new Tree("child", tree);
-    tree.changeParent(child);
-    expect(tree.children).toEqual([child]);
+    const child = tree.addChild("child");
+    const newParent = new Tree("/", null);
+    child.changeParent(newParent);
+    expect(tree.children).toEqual([]);
+    expect(newParent.children).toEqual([child]);
   });
 
   it("should get the strata of the tree", () => {

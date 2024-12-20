@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+/**
+ * Icon component for Chevron.
+ * @param className - The class name for styling the component.
+ * @returns The rendered SVG icon component.
+ */
 export const IconChevron = styled(({ className }: { className: string }) => {
   return (
     <svg

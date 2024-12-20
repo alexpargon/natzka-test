@@ -26,6 +26,13 @@ const Button = styled.button`
   }
 `;
 
+/**
+ * Represents a segment component in the file explorer.
+ * @param {SegmentProps} props - The props for the Segment component.
+ * @param {strata} props.data - The data for the segment.
+ * @param {Function} props.action - The callback function to be called when the segment is clicked.
+ * @returns {JSX.Element} The rendered Segment component.
+ */
 function Segment(props: SegmentProps) {
   const { data, action } = props;
   const [open, setOpen] = useState(false);

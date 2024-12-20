@@ -8,6 +8,14 @@ const Style = styled.div`
   font-weight: 200;
 `;
 
+/**
+ * Renders a file explorer component.
+ *
+ * @param {ExplorerProps} props - The props for the Explorer component.
+ * @param {string[]} props.data - The array of file paths to be displayed in the file explorer.
+ * @param {Function} props.onSelect - The callback function to be called when a segment is selected.
+ * @returns {JSX.Element} The rendered Explorer component.
+ */
 const Explorer = (props: ExplorerProps) => {
   const { onSelect } = props;
   const [tree, setTree] = useState<Tree<string>>();
